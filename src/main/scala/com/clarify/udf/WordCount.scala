@@ -1,4 +1,4 @@
-package com.clarify
+package com.clarify.udf
 
 import org.apache.spark.sql.api.java.UDF1
 
