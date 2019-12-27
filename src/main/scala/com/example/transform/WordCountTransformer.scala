@@ -1,4 +1,4 @@
-package com.clarify.transform
+package com.example.transform
 
 import org.apache.spark.ml.Transformer
 import org.apache.spark.ml.param.{Param, ParamMap}

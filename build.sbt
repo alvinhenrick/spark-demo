@@ -5,7 +5,7 @@ version := "0.1"
 scalaVersion := "2.11.12"
 
 
-val sparkVersion = "2.4.1"
+val sparkVersion = "2.4.4"
 
 scalacOptions := Seq("-unchecked", "-deprecation")
 
