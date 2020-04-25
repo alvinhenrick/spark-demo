@@ -1,6 +1,5 @@
 package com.example.transform
 
-import org.apache.spark.sql.functions.callUDF
 import org.apache.spark.sql.{QueryTest, Row}
 import org.apache.spark.sql.test.SharedSparkSession
 
