@@ -10,7 +10,7 @@ import org.apache.spark.sql.{DataFrame, Dataset}
 
 class WordCountTransformer(override val uid: String) extends Transformer {
   final val inputCol = new Param[String](this, "inputCol", "The input column")
-  final val outputCol = new Param[String](this, "outputCol", "The output column");
+  final val outputCol = new Param[String](this, "outputCol", "The output column")
 
   def setInputCol(value: String): this.type = set(inputCol, value)
 
