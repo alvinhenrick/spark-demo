@@ -16,7 +16,7 @@ class WordCountTransformer(override val uid: String) extends Transformer {
 
   def setOutputCol(value: String): this.type = set(outputCol, value)
 
-  def this() = this(Identifiable.randomUID("wordcounttransformer"))
+  def this() = this(Identifiable.randomUID("WordCountTransformer"))
 
   def copy(extra: ParamMap): WordCountTransformer = {
     defaultCopy(extra)
@@ -34,7 +34,7 @@ class WordCountTransformer(override val uid: String) extends Transformer {
   }
 
   def transform(df: Dataset[_]): DataFrame = {
-    val wordcount = udf { in: String => in.split(" ").length }
-    df.select(col("*"), wordcount(df.col($(inputCol))).as($(outputCol)))
+    val wordCount = udf { in: String => in.split(" ").length }
+    df.select(col("*"), wordCount(df.col($(inputCol))).as($(outputCol)))
   }
 }
