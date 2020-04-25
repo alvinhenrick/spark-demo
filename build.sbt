@@ -6,8 +6,10 @@ scalaVersion := "2.11.12"
 
 
 val sparkVersion = "2.4.4"
-
 scalacOptions := Seq("-unchecked", "-deprecation")
+
+// turn off parallel tests
+parallelExecution in Test := false
 
 // remove version-specific scala dirs
 crossPaths := false
